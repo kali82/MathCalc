@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#e3e7ea"
+        android:gravity="bottom"
+        android:minHeight="200dp"
+        android:maxHeight="0dp"
+        android:padding="16dp"
+        android:paddingBottom="32dp"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+        android:textSize="48sp" />
+
+
+    <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="300dp"
+                android:id="@+id/gridLayout"
+                 android:layout_below="@id/textView"
+                 android:layout_centerHorizontal="true"
+                grid:useDefaultMargins="false" grid:alignmentMode="alignBounds" grid:columnCount="9" grid:rowCount="9">
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="7"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="0"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="0"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="8"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="2"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="0"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="9"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="4"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="0"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/btnClearId"
+                    style="@style/calcAction"
+                    android:onClick="onClickClear"
+                    android:text="c"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="6"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="0"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="4"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="0"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="2"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="5"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="2"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="2"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="6"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="4"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="2"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickOperator"
+                    android:text="/"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="6"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="2"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="1"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="0"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="4"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="2"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="2"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="4"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="3"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="4"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="4"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickOperator"
+                    android:text="*"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="6"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="4"
+                    grid:layout_rowSpan="2"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickNumber"
+                    android:text="0"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="0"
+                    grid:layout_columnSpan="3"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="6"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcNumber"
+                    android:onClick="onClickOperator"
+                    android:text="."
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="4"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="6"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickEqual"
+                    android:text="="
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="6"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="6"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickOperator"
+                    android:text="&lt;"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="8"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="0"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickOperator"
+                    android:text="&gt;"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="8"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="2"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickOperator"
+                    android:text="^"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="8"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="6"
+                    grid:layout_rowWeight="1" />
+
+                <Button
+                    style="@style/calcAction"
+                    android:onClick="onClickOperator"
+                    android:text="&amp;"
+                    android:textColor="@color/calcAccent"
+                    android:textStyle="bold"
+                    grid:layout_column="8"
+                    grid:layout_columnWeight="1"
+                    grid:layout_row="4"
+                    grid:layout_rowWeight="1" />
+    </android.support.v7.widget.GridLayout>
+
+
+
+</RelativeLayout>
